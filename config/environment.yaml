@@ -1,0 +1,21 @@
+name: snakeRacetrack
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python=3.12
+- pip
+- setuptools
+- ipython
+- jupyter
+- nb_conda
+- notebook<7.0.0
+- ffmpeg
+- pytables==3.8.0
+- cudatoolkit
+- pip:
+  - -r requirements.txt
+
+# to initialize: conda env create --file ./config/environment.yaml
+# to update: conda env update --file ./config/environment.yaml --prune
+# to destroy: conda env remove ./config/environment.yaml
