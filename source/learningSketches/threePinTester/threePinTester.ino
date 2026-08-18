@@ -14,11 +14,16 @@ void loop() {
   // poll the state of each pin constantly
   for (int i = 0; i < numSensors; i++) {
     int sensorState = digitalRead(sensorPins[i]);
+    int currentSensor = sensorPins[i] - 1;
       // print only when state changes / explicitly show what it reads
     if (sensorState == LOW) {
-      Serial.println("Beam BROKEN (0)");
+      Serial.print("Beam ");
+      Serial.print(currentSensor);
+      Serial.println(" BROKEN (0)");
     } else {
-      Serial.println("Beam CLEAR (1)");
+      Serial.print("Beam ");
+      Serial.print(currentSensor);
+      Serial.println(" CLEAR (1)");
     }
   }
   Serial.println();
