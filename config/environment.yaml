@@ -8,11 +8,9 @@ dependencies:
 - setuptools
 - ipython
 - jupyter
-- nb_conda
+- nb_conda_kernels
 - notebook<7.0.0
-- ffmpeg
 - pytables==3.8.0
-- cudatoolkit
 - pip:
   - -r requirements.txt
 

@@ -28,8 +28,6 @@ void loop() {
     if (startPinSensorState == LOW) {
       // set time variable
       initialTime = millis();
-      // record start time
-      sensorOutputs[0] = 
       // set the break state to true to break out of the loop
       startPinState = true;
     }

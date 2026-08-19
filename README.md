@@ -22,6 +22,7 @@
 
 - arduino-ide_2.3.10_Linux_64bit
 - conda (environment details below)
+- jupyter suite
 
 #### environment.yaml contents
 
@@ -36,11 +37,9 @@ dependencies:
 - setuptools
 - ipython
 - jupyter
-- nb_conda
+- nb_conda_kernels
 - notebook<7.0.0
-- ffmpeg
 - pytables==3.8.0
-- cudatoolkit
 - pip:
   - -r requirements.txt
 ```
